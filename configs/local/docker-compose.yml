@@ -29,7 +29,7 @@ services:
             web:
                 condition: service_healthy
     pgbouncer:
-        image: bitnami/pgbouncer:latest
+        image: bitnamilegacy/pgbouncer:1.21.0
         hostname: pgbouncer
         restart: unless-stopped
         depends_on:
